@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="user-type">Select User Type:</label>
+            <select id="user-type" name="user-type">
+                <option value="">Please select one</option>
+                <option value="faculty">Faculty</option>
+                <option value="student">Student</option>
+            </select>
+            <div id="faculty-login" class="hidden">
+                <div>
+                    <label for="faculty-username">Username:</label>
+                    <input type="text" id="faculty-username" name="faculty-username">
+                </div>
+                <div>
+                    <label for="faculty-password">Password:</label>
+                    <input type="password" id="faculty-password" name="faculty-password">
+                </div>
+            </div>
+            <div id="student-login" class="hidden">
+                <div>
+                    <label for="student-enrollment">Enrollment No.:</label>
+                    <input type="text" id="student-enrollment" name="student-enrollment">
+                </div>
+                <div>
+                    <label for="student-password">Password:</label>
+                    <input type="password" id="student-password" name="student-password">
+                </div>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
