@@ -13,7 +13,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         var facultyPassword = document.getElementById('faculty-password').value;
 
         if (facultyUsername === 'faculty' && facultyPassword === 'password') {
-            window.location.href = 'qr.html';
+            window.location.href = 'facultydashboard.html';
         } else {
             alert('Invalid faculty credentials. Please try again.');
         }
@@ -21,9 +21,9 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         var studentEnrollment = document.getElementById('student-enrollment').value;
         var studentPassword = document.getElementById('student-password').value;
 
-        if (studentEnrollment === 'student' && studentPassword === 'password') {
-            // This will be going to the new page after updating it, right now it is just showing only alert 
-            alert('This site is asking permission to open your camera to scan QR');
+        if (studentEnrollment === 'student' && studentPassword === 'password') { 
+            window.location.href = 'studentdashboard.html';
+
         } else {
             alert('Invalid student credentials. Please try again.');
         }

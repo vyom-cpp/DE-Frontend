@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="student_styles.css">
+</head>
+<body>
+    <!-- Student Dashboard -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#timetable">Time Table</a></li>
+            <li><a href="#attendance">Attendance Track</a></li>
+            <li><a href="#" id="scanqr">Scan QR</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2 id="home">Home Page</h2>
+        <div class="calendar">
+            <!-- Calendar content  -->
+            
+        </div>
+        <h2 id="timetable">Time Table</h2>
+        <div class="timetable">
+            <!-- Time table content  -->
+            
+        </div>
+        <h2 id="attendance">Attendance Track</h2>
+        <div class="attendance">
+            <!-- Attendance track content  -->
+
+        </div>
+        <h2 id="qr">Scan QR</h2>
+        <div class="qr">
+            <!-- QR Scan Content -->
+            
+        </div>
+    </div>
+
+    <script>
+    
+        document.getElementById('scanqr').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('This site is asking to open camera.');
+        });
+    </script>
+</body>
+</html>
