@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="main-container" class="container">
+        <form id="login-form">
+            <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+            
+            <div class="mb-3">
+                <label for="user-type" class="form-label">Select User Type:</label>
+                <select id="user-type" name="user-type" class="form-select">
+                    <option value="">Please select one</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+
+            <div id="faculty-login" class="hidden">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="faculty-username" name="faculty-username" placeholder="Username">
+                    <label for="faculty-username">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="faculty-password" name="faculty-password" placeholder="Password">
+                    <label for="faculty-password">Password</label>
+                </div>
+            </div>
+
+            <div id="student-login" class="hidden">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="student-enrollment" name="student-enrollment" placeholder="Enrollment No.">
+                    <label for="student-enrollment">Enrollment No.</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="student-password" name="student-password" placeholder="Password">
+                    <label for="student-password">Password</label>
+                </div>
+            </div>
+            
+            <button id="login-btn" class="btn btn-primary w-100 py-2 hidden" type="button">Login</button>
+            <div class="text-center mt-3 hidden" id="register-link">
+                <p>Not a member? <a href="#!">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light hidden fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav-items" class="navbar-nav">
+                    <!-- Nav items will be inserted here dynamically -->
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzq57puWbQja8a9fX1pjRiqGy9nljAz1Ydi5PmMOe6B4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-pprn3073KE6tl6LrD6M8GkaXN7U6wr8+5hb5g7e5e5hgFoQmMmfw5Zl+O8z1p24/" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+</body>
+</html>
