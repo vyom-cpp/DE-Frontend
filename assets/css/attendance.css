@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.webdev {
+    background-color: #5861d1;
+}
+
+.datastruct {
+    background-color: #ff6b6b;
+}
+
+.os {
+    background-color: #34c38f;
+}
+
+.softskills {
+    background-color: #ff9f43;
+}
+
+.iot {
+    background-color: #8e44ad;
+}
+
+.details h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.progress-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #e3e6f0;
+    margin: 10px auto;
+}
+
+.progress-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress-circle::after {
+    content: attr(data-progress) '%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: black;
+}
+
+.progress-circle .mask,
+.progress-circle .fill {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    clip: rect(0px, 80px, 80px, 40px);
+}
+
+.progress-circle .mask {
+    clip: rect(0px, 40px, 80px, 0px);
+}
+
+.progress-circle .fill {
+    background-color: #4e73df;
+}
+
+.progress-circle .mask.full,
+.progress-circle .fill.fix {
+    clip: rect(auto, auto, auto, auto);
+}
+
+.progress-circle .fill.fix {
+    background-color: #fff;
+}

@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007BFF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar i {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth transition for navbar menu */
+#nav-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Student Section Styles */
+.student-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Header Styles */
+.student-section h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.student-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Announcements Section */
+.announcements {
+    margin-top: 20px;
+}
+
+.announcements h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.announcements ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+    color: #555;
+}
+
+.announcements li {
+    margin-bottom: 5px;
+}
+
+/* Quick Links Section */
+.quick-links {
+    margin-top: 20px;
+}
+
+.quick-links h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 5px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.1em;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+/* Time Table Styles */
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+}
+
+.timetable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.timetable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.timetable td[colspan="5"] {
+    text-align: center;
+    background-color: #f0f0f0;
+    font-style: italic;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin: 10px 0;
+    }
+}

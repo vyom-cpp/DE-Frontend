@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/studentdashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <ul class="nav-menu" id="nav-menu">
+            <li class="student-menu"><a href="#home">Home</a></li>
+            <li class="student-menu"><a href="#timetable">Time Table</a></li>
+            <li class="student-menu"><a href="/public/attendance.html">Attendance Track</a></li>
+            <li class="student-menu"><a href="#scan-qr" id="scan-qr">Scan QR</a></li>
+        </ul>
+    </nav>
+
+    <!-- Student Dashboard -->
+    <section id="home" class="student-section">
+        <h1>Home</h1>
+        <p>Welcome to the Student Dashboard</p>
+        
+        <!-- Announcements Section -->
+        <div class="announcements">
+            <h2>Announcements</h2>
+            <ul>
+                <li>Upcoming exams start next Monday.</li>
+                <li>Submit assignments by the end of the week.</li>
+                <li>New courses available for enrollment.</li>
+            </ul>
+        </div>
+    
+        <!-- Quick Links Section -->
+        <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#profile">My Profile</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="timetable" class="student-section">
+        <h1>Time Table</h1>
+        <p>This is your time table, students.</p>
+    
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                    <td>Chemistry</td>
+                    <td>Biology</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Physics</td>
+                    <td>Chemistry</td>
+                    <td>Mathematics</td>
+                    <td>English</td>
+                    <td>Biology</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>Chemistry</td>
+                    <td>Biology</td>
+                    <td>Physics</td>
+                    <td>Mathematics</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 1:00</td>
+                    <td>English</td>
+                    <td>Mathematics</td>
+                    <td>Biology</td>
+                    <td>Physics</td>
+                    <td>Chemistry</td>
+                </tr>
+                <tr>
+                    <td>1:00 - 2:00</td>
+                    <td colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>2:00 - 3:00</td>
+                    <td>Biology</td>
+                    <td>English</td>
+                    <td>Mathematics</td>
+                    <td>Chemistry</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <td>3:00 - 4:00</td>
+                    <td>Chemistry</td>
+                    <td>Mathematics</td>
+                    <td>English</td>
+                    <td>Biology</td>
+                    <td>Physics</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="../assets/js/studentdashboard.js"></script>
+</body>
+</html>
